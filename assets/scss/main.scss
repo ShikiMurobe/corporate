@@ -1,0 +1,43 @@
+
+
+html,body{
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+section{
+  h1.section-h1{
+    width: 30rem;
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    background: #000000;
+    color: #ffffff;
+  }
+  margin-bottom: 6rem;
+}
+.page-enter {
+  opacity: 0;
+}
+.page-enter-active {
+  transition: opacity 1s;
+}
+
+@media screen and (max-width: 768px){
+  section{
+    h1.section-h1{
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 1.4rem;
+    }
+    margin-bottom: 6rem;
+  }  
+}
