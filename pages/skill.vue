@@ -3,7 +3,7 @@
     <h1 class="section-h1">Skill</h1>
     <div class="container md:mt-12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12">
       <div class="w-full md:shadow-lg px-12 py-8"
-        v-for="skill in skills" :key="skill"
+        v-for="skill in skills" :key="skill.name"
       >
         <h3>{{skill.name}}</h3>
         <Chart :items="skill.items" />
