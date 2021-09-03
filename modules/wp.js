@@ -1,13 +1,13 @@
 import axios from "axios"
+import axiosJsonpAdapter from 'axios-jsonp'
 
 class WPModule{
   static async getProfile(){
     const baseURL = "https://www.skbfantasy.link/wp-json/api/v1/"
     const url = baseURL + "getProfile"
     const option = {
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      }
+      'Content-Type': "application/json;charset=utf-8",
+      'Access-Control-Allow-Origin': "*"
     }
     const result = await axios.get(url, option)
     
@@ -17,9 +17,6 @@ class WPModule{
     const baseURL = "https://www.skbfantasy.link/wp-json/api/v1/"
     const url =  baseURL + "getSkills"
     const option = {
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      }
     }
     const result = await axios.get(url, option)
     return result.data.posts
@@ -28,9 +25,6 @@ class WPModule{
     const baseURL = "https://www.skbfantasy.link/wp-json/api/v1/"
     const url =  baseURL + "getServices"
     const option = {
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      }
     }
     const result = await axios.get(url, option)
     return result.data.posts
