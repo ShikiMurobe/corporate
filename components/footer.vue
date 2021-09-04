@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <nav class="md:mb-3 px-2 md:px-8 py-4 md:py-3 grid grid-cols-5 md:gap-x-8 text-center">
+    <nav class="md:mb-3 px-2 md:px-8 grid grid-cols-5 md:gap-x-8 items-center text-center">
       <nuxt-link to="/">Home</nuxt-link>
       <nuxt-link to="about">About</nuxt-link>
       <nuxt-link to="skill">Skill</nuxt-link>
@@ -15,11 +15,19 @@ footer{
     position: fixed;
     right: 0;
     bottom: 0;
+    height: 4rem;
     font-size: 1.6rem;
     font-weight: 500;
     background: #000000;
     color: #ffffff;
   }
+  nav a{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 @media screen and (max-width: 768px){
 footer{

@@ -27,7 +27,7 @@ section{
   opacity: 0;
 }
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 1.2s;
+  animation: opacity 1.5s;
 }
 
 @media screen and (max-width: 768px){
