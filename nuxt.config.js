@@ -22,7 +22,8 @@ export default {
       { hid: 'og:site_name', property: 'og:site_name', content: 'Shikibu\'s Corporate Site' },
       { hid: 'og:url', property: 'og:url', content: 'https://shikimurobe.github.io/corporate/' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { name: 'twitter:card', content: 'summary' }
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'google-site-verification"', content: 'dS7WF3ogJyr7_ZUjZ1lKLDbGbORuYMfF3mwSYGVCfYc' },
     ],
     link: [
       {
