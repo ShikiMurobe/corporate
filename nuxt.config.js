@@ -46,6 +46,7 @@ export default {
 
   buildModules: [
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics',
   ],
 
   modules: [
@@ -59,8 +60,11 @@ export default {
       families: ['Lato:400,700', 'Noto+Sans+JP:400,700', 'Kaushan+Script'] 
     }
   },
-  'google-gtag': {
+  googleAnalytics: {
     id: 'UA-188035734-1', 
+  },
+  'google-gtag': {
+    id: 'G-DS2PSVYEM8', 
     debug: false, 
   },
   sitemap: {
