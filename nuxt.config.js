@@ -23,7 +23,6 @@ export default {
       { hid: 'og:url', property: 'og:url', content: 'https://shikimurobe.github.io/corporate/' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { name: 'twitter:card', content: 'summary' },
-      { name: 'google-site-verification"', content: 'dS7WF3ogJyr7_ZUjZ1lKLDbGbORuYMfF3mwSYGVCfYc' },
     ],
     link: [
       {
@@ -61,7 +60,7 @@ export default {
     }
   },
   'google-gtag': {
-    id: 'G-RLXW8TP255', 
+    id: 'UA-188035734-1', 
     debug: false, 
   },
   sitemap: {
