@@ -45,6 +45,7 @@ export default {
 
   modules: [
     'nuxt-webfontloader',
+    '@nuxtjs/google-gtag',
   ],
 
   webfontloader: {
@@ -52,7 +53,10 @@ export default {
       families: ['Lato:400,700', 'Noto+Sans+JP:400,700', 'Kaushan+Script'] 
     }
   },
-  
+  'google-gtag': {
+    id: 'G-RLXW8TP255', 
+    debug: false, 
+  },
   build: {
     loaders: {
       scss: {
