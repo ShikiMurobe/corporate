@@ -23,11 +23,11 @@ section{
   }
   margin-bottom: 6rem;
 }
-.fade-enter, .fade-leave-to {
+.page-enter {
   opacity: 0;
 }
-.fade-enter-active, .fade-leave-active {
-  animation: opacity 1.5s;
+.page-enter-active {
+  transition: opacity 1.5s;
 }
 
 @media screen and (max-width: 768px){
