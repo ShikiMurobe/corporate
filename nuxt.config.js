@@ -47,6 +47,7 @@ export default {
   buildModules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-analytics',
+    '@nuxtjs/gtm',
   ],
 
   modules: [
@@ -66,6 +67,10 @@ export default {
   'google-gtag': {
     id: 'G-DS2PSVYEM8', 
     debug: false, 
+  },
+  gtm: {
+    id: "GTM-WD327VQ",
+    pageTracking: true,
   },
   sitemap: {
     hostname: 'https://shikimurobe.github.io/corporate',
