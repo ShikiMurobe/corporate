@@ -10,14 +10,19 @@ export default {
 
   head: {
     title: 'Shikibu\'s Corporate Site',
+    titleTemplate: '%s | Shikibu\'s Corporate Site',
     htmlAttrs: {
       lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'This site is the Corporate of Shikibu -Fullstack Engineer-' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Shikibu\'s Corporate Site' },
+      { hid: 'og:url', property: 'og:url', content: 'https://shikimurobe.github.io/corporate/' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary' }
     ],
     link: [
       {
@@ -46,6 +51,7 @@ export default {
   modules: [
     'nuxt-webfontloader',
     '@nuxtjs/google-gtag',
+    '@nuxtjs/sitemap',
   ],
 
   webfontloader: {
@@ -56,6 +62,14 @@ export default {
   'google-gtag': {
     id: 'G-RLXW8TP255', 
     debug: false, 
+  },
+  sitemap: {
+    hostname: 'https://shikimurobe.github.io/corporate',
+    routes: [
+      "/about/",
+      "/skill/",
+      "/service/",
+    ],
   },
   build: {
     loaders: {

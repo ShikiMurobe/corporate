@@ -6,6 +6,10 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+}
+</script>
 <style lang="scss" scoped>
 #top{
   margin-bottom: inherit;

@@ -24,9 +24,18 @@ import WPModule from "../modules/wp"
 export default {
   data(){
     return{
+      pageTitle: "Service",
       loading: false,
       services: {
       },
+    }
+  },
+  head() {
+    return {
+      title: this.pageTitle,
+      meta: [
+        { hid: 'og:title', property: 'og:title', content: this.pageTitle },
+      ],
     }
   },
   async mounted(){

@@ -26,9 +26,18 @@ export default {
   },
   data(){
     return{
+      pageTitle: "Skill",
       loading: false,
       skills: [],
       otherSkills: [],
+    }
+  },
+  head() {
+    return {
+      title: this.pageTitle,
+      meta: [
+        { hid: 'og:title', property: 'og:title', content: this.pageTitle },
+      ],
     }
   },
   async mounted(){

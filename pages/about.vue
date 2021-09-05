@@ -14,12 +14,21 @@
 <script>
 import * as moment from "moment"
 import WPModule from "../modules/wp"
-export default {
+export default {  
   data(){
     return{
+      pageTitle: "About",
       loading: false,
       profiles: {
       },
+    }
+  },
+  head() {
+    return {
+      title: this.pageTitle,
+      meta: [
+        { hid: 'og:title', property: 'og:title', content: this.pageTitle },
+      ],
     }
   },
   async mounted(){
