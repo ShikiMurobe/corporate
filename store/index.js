@@ -2,6 +2,7 @@ export const state = () => ({
   profiles: [],
   skills: [],
   services: [],
+  works: [],
 })
 
 export const mutations = {
@@ -14,6 +15,9 @@ export const mutations = {
   setServices(state, services) {
     state.services = services
   },
+  setWorks(state, works) {
+    state.works = works
+  },
 }
 
 export const actions = {
@@ -25,5 +29,8 @@ export const actions = {
   },
   setServicesAction(context, payload){
     context.commit("setServices", payload)
+  },
+  setWorksAction(context, payload){
+    context.commit("setWorks", payload)
   },
 }

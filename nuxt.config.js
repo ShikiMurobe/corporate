@@ -78,6 +78,7 @@ export default {
       "/about/",
       "/skill/",
       "/service/",
+      "/work/",
     ],
   },
   build: {
